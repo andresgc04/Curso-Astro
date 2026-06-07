@@ -20,9 +20,10 @@ const pokemonImageSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/maste
   ]}
 >
   <img
+    transition:name={`${name}-image`}
     src={pokemonImageSrc}
     alt={name}
-    class:list={[{ "w-26 h-26": isBig, "w-16 h-16": !isBig }]}
+    class:list={[{ "w-26 h-26": isBig, "w-22 h-22": !isBig }]}
   />
   <span
     class:list={[
